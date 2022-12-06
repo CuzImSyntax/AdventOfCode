@@ -6,7 +6,7 @@ def get_data() -> str:
 
 def get_marker(range_: int) -> int:
     line: str = get_data()
-    for i in range(0, len(line)):
+    for i in range(len(line)):
         if len(set(line[i:i+range_])) == range_:
             return i+range_
 
